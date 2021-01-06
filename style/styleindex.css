@@ -1,0 +1,54 @@
+/* HELE SIDEN */
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: #FAF2F5;
+}
+
+/* MOBILVERSION*/
+
+/* Menu */
+
+/*
+nav {
+    width: 12vw;
+    height: 100vh;
+    background-color: lightpink;
+}*/
+
+#sophie_spang {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+    /* DESKTOP */
+
+    #sophie_spang {
+        display: block;
+        transform: rotate(-90deg);
+        position: absolute;
+        right: -300px;
+        top: 18vh;
+    }
+
+    #sophie_spang p {
+        color: #3F633B;
+        font-size: 15rem;
+        font-family: 'Questrial', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1vw;
+    }
+
+    #sophie_spang .spang {
+        letter-spacing: 2vw;
+    }
+
+
+}
