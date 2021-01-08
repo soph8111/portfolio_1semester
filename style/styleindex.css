@@ -6,22 +6,86 @@
 
 body {
     overflow: hidden;
-    background-color: #FAF2F5;
+    background-color: aliceblue;
 }
 
-/* MOBILVERSION*/
+/* MOBILVERSION* /
 
 /* Menu */
 
-/*
-nav {
-    width: 12vw;
-    height: 100vh;
-    background-color: lightpink;
-}*/
+.logo {
+    width: 20vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4vw;
+}
 
 #sophie_spang {
     display: none;
+}
+
+
+/*
+#portfolio a img {
+    position: absolute;
+    width: 75%;
+    height: 30vh;
+    object-fit: cover;
+    top: 25vw;
+}
+
+#portfolio p {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 7vw;
+    top: 34vh;
+}
+
+#om_mig a img {
+    position: absolute;
+    width: 60%;
+    height: 45vh;
+    object-fit: cover;
+    bottom: 8vw;
+    right: 0;
+}
+
+#om_mig p {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 28vw;
+    bottom: 8vh;
+}
+*/
+
+#portfolio {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#portfolio p {
+    transform: rotate(-90deg) translateY(13vw) translateX(-11vw);
+}
+
+
+#om_mig {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+#om_mig p {
+    transform: rotate(-90deg) translateY(40vw) translateX(-14vw);
+
+}
+
+#om_mig img {}
+
+#forside img {
+    width: 100%;
+    object-fit: cover;
 }
 
 

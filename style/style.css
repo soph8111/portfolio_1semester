@@ -13,17 +13,53 @@ img {
 /* MOBILVERSION*/
 
 /* Tekst */
-h1,
-h2,
+h1 {
+    text-align: center;
+    color: #3F633B;
+    font-family: 'Questrial', sans-serif;
+    font-size: 2em;
+    text-transform: Uppercase;
+    padding: 2vw;
+    font-weight: 100;
+    letter-spacing: 0.4vw;
+}
+
+h2 {
+    text-align: center;
+    color: #3F633B;
+    font-family: 'Questrial', sans-serif;
+    font-size: 0.8em;
+    text-transform: Uppercase;
+    padding: 2vw;
+    font-weight: 100;
+}
+
 h3 {
     text-align: center;
     color: #3F633B;
-    margin: 2vw;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2em;
+    text-transform: Uppercase;
+    font-weight: 100;
+    padding: 1vw;
+    letter-spacing: 0.4vw;
+    margin-top: 4vw;
 }
 
 p {
-    margin-bottom: 2vw;
     font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    color: #6F6F6F;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    line-height: 1.3em;
+}
+
+a {
+    font-family: 'Questrial', sans-serif;
+    text-decoration: none;
+    color: #F7CCDA;
+    color: #3F633B;
 }
 
 /* Menu */
@@ -129,10 +165,6 @@ nav .some {
     display: none;
 }
 
-nav p {
-    display: none;
-}
-
 .hidden {
     display: none;
 }
@@ -151,17 +183,21 @@ main {
 .temaer_left,
 .temaer_right {
     display: grid;
-    grid-gap: 6vw;
     align-items: center;
     text-align: center;
     grid-template-columns: 3fr 2fr;
     margin-right: 2vw;
+    margin-top: 2vh;
 }
 
 .temaer_right {
     grid-template-columns: 2fr 3fr;
     margin-right: 0;
     margin-left: 2vw;
+}
+
+.temaBeskrivelse h2 {
+    font-size: 1.2em;
 }
 
 /* OM MIG SIDEN */
@@ -203,7 +239,7 @@ main {
 #kontaktFormular .send {
     display: flex;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #3F633B;
     border: none;
     color: gray;
     cursor: pointer;
@@ -213,6 +249,37 @@ main {
 #kontaktFormular .send button {
     margin: 1.2vw;
 }
+
+/* PROJEKTER */
+
+h2 {
+    padding: 1vw;
+}
+
+.info {
+    background-color: #FAF2F5;
+    padding-top: 5vw;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+.info h3 {
+    padding: 3vw;
+    text-align: left;
+    margin-left: 15%;
+    letter-spacing: 0;
+}
+
+.info ul {
+    list-style-type: circle;
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    color: #3F633B;
+    margin-left: 15%;
+    padding-bottom: 5vw;
+}
+
+
 
 /* FOOTER */
 
@@ -242,12 +309,12 @@ footer .some {
     /* DESKTOP */
 
     nav {
-        width: 14vw;
+        width: 15vw;
     }
 
     #menu {
         display: block;
-        width: 14vw;
+        width: 15vw;
     }
 
     nav li {
@@ -266,18 +333,15 @@ footer .some {
         display: none;
     }
 
+    nav a {
+        letter-spacing: 0.15vw;
+    }
+
     /*    HUSK */
     nav a:hover {}
 
     nav hr {
         width: 80%;
-    }
-
-    nav p {
-        display: flex;
-        color: #3F633B;
-        font-size: 0.5em;
-        margin-left: 1.5vw;
     }
 
     nav #some {
@@ -292,20 +356,28 @@ footer .some {
 
     main {
         padding-top: 3vh;
-        margin-left: 16vw;
+        margin-left: 17vw;
         margin-right: 2vw;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     /*    PORTFOLIO SIDEN */
 
+
+    .tekst_intro {
+        margin-top: 0vw;
+        margin-bottom: 3vw;
+        text-align: center;
+    }
+
     #temaer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 4vw;
-        align-items: center;
-        text-align: center;
-
+        grid-gap: 3vw;
     }
 
     .temaer_left,
@@ -314,6 +386,8 @@ footer .some {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        width: 25vw;
+        height: 20vw;
     }
 
     .temaBillede {
@@ -342,12 +416,27 @@ footer .some {
         grid-row-start: 1;
         grid-row-end: span 1;
 
-        background-color: aliceblue;
+        background-color: #3F633B;
         display: grid;
         justify-content: center;
         align-content: center;
-        height: 20vw;
+        height: 97.5%;
+        margin-bottom: 0.6vh;
         z-index: -1;
+    }
+
+    .temaBeskrivelse a h2,
+    .temaBeskrivelse a h3 {
+        color: #F7CCDA;
+        padding: 1vw;
+
+    }
+
+    .temaBeskrivelse a h3 {
+        padding: 0.2vw;
+        text-align: center;
+        font-size: 0.8em;
+        margin: 0;
     }
 
     /*    OM MIG SIDEN */
@@ -427,13 +516,87 @@ footer .some {
         text-align: left;
     }
 
+    /*    PROJEKTER */
+
+    h2 {
+        padding: 0.4vw;
+        font-size: 1.1em;
+    }
+
+    h3 {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    section {
+        margin-top: 3vw;
+    }
+
+    .intro {
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding-top: 0;
+    }
+
+    .info h3 {
+        padding: 1vw;
+        margin-left: 2vw;
+    }
+
+    .info ul {
+        margin-left: 2vw;
+    }
+
+    .process {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
+    }
+
+    .process h3 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+    .reflektioner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
+    }
+
+    .reflektioner h3 {
+        margin-top: 0;
+        padding-top: 0;
+    }
 
 
 
+    /*    FOOTER */
 
-    /*    INGEN FOOTER PÅ DESKTOP */
 
     footer {
+        width: 15vw;
+        position: fixed;
+        bottom: 1vw;
+    }
+
+    footer p {
+        margin: 0;
+        padding: 0;
+        padding-left: 2vw;
+        width: 100%;
+        font-size: 0.6em;
+    }
+
+    footer .some {
         display: none;
     }
 
