@@ -28,7 +28,7 @@ h2 {
     text-align: center;
     color: #3F633B;
     font-family: 'Questrial', sans-serif;
-    font-size: 0.8em;
+    font-size: 1.4em;
     text-transform: Uppercase;
     padding: 2vw;
     font-weight: 100;
@@ -202,21 +202,61 @@ main {
 
 /* OM MIG SIDEN */
 
+#intro #citat p {
+    text-align: center;
+    color: #F7CCDA;
+    padding: 7vw;
+}
+
+#omMig #billedecollage {
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (3, 1fr) 1fr;
+    height: auto;
+}
+
+#billedecollage #baggrund {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+    z-index: -3;
+    opacity: 60%;
+}
+
+#billedecollage #forgrund {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    z-index: -2;
+}
+
 #tlfMail {
     display: grid;
     grid-template-columns: 1fr 3fr;
     margin: 5vw;
-    margin-left: 25vw;
+    margin-left: 20vw;
     margin-right: 15vw;
 }
 
 #tlfMail img {
     width: 6vw;
+    padding: 1vw;
+}
+
+#tlfMail a {
+    padding: 1vw;
 }
 
 #kontakt {
-    border: #3F633B;
-    border-style: solid;
+    background-color: #FAF2F5;
+}
+
+#kontakt {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 #kontakt p {
@@ -227,27 +267,48 @@ main {
 
 #kontaktFormular {
     margin: 5vw;
+}
 
+textarea,
+input {
+    width: 80%;
+    height: 4vh;
+    padding: 1vw;
+    font-size: 0.8em;
+    font-family: 'Raleway', sans-serif;
+    color: #6F6F6F;
+    border: none;
+}
+
+textarea {
+    height: 10vh;
+    max-width: 80%;
+}
+
+.send {
+    border: none;
+    color: #3F633B;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    font-weight: 200;
 }
 
 #kontaktFormular .form_felt {
     margin: 2vw;
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
-#kontaktFormular .send {
-    display: flex;
-    align-items: center;
-    background-color: #3F633B;
-    border: none;
-    color: gray;
-    cursor: pointer;
-}
+.send img {
+    width: 5vw;
+    padding: 1vw;
 
-#kontaktFormular .send img,
-#kontaktFormular .send button {
-    margin: 1.2vw;
 }
 
 /* PROJEKTER */
@@ -278,6 +339,7 @@ h2 {
     margin-left: 15%;
     padding-bottom: 5vw;
 }
+
 
 
 
@@ -360,9 +422,20 @@ footer .some {
         margin-right: 2vw;
     }
 
+    h2 {
+        padding: 0.4vw;
+        font-size: 1.4em;
+    }
+
+    h3 {
+        margin-top: 0;
+        text-align: left;
+        padding-left: 0;
+    }
+
     p {
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 1vw;
     }
 
     /*    PORTFOLIO SIDEN */
@@ -429,7 +502,6 @@ footer .some {
     .temaBeskrivelse a h3 {
         color: #F7CCDA;
         padding: 1vw;
-
     }
 
     .temaBeskrivelse a h3 {
@@ -445,25 +517,27 @@ footer .some {
     #intro {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
     }
 
-    #intro h2 {
-        grid-column-start: 1;
-        grid-column-end: span 2;
-        text-align: center;
+    #intro p {
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
 
-    #intro img {
+    #intro #portraet {
+        width: 25vw;
+        margin: auto;
         grid-column-start: 2;
         grid-column-end: span 1;
-        grid-row-start: 2;
+        grid-row-start: 1;
         grid-row-end: span 2;
     }
-
 
     #omMig {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
 
     }
 
@@ -471,14 +545,18 @@ footer .some {
         grid-column-start: 1;
         grid-column-end: span 2;
         text-align: center;
+        padding: 3vw;
     }
 
-    #omMig img {
+    #omMig #billedecollage {
         grid-column-start: 2;
         grid-column-end: span 1;
         grid-row-start: 2;
         grid-row-end: span 5;
+
+        height: 40vh;
     }
+
 
     #kontakt {
         display: grid;
@@ -486,9 +564,11 @@ footer .some {
     }
 
     #kontakt h2 {
+        padding: 2vw;
         grid-column-start: 1;
         grid-column-end: span 2;
         text-align: center;
+        letter-spacing: 0.4vw;
     }
 
     #kontaktInfo {
@@ -506,8 +586,9 @@ footer .some {
     }
 
     #tlfMail img {
-        width: 3.5vw;
+        width: 2.5vw;
         padding: 0.3vw;
+        border: 2vw;
     }
 
     #kontakt p {
@@ -516,17 +597,24 @@ footer .some {
         text-align: left;
     }
 
+    input {
+        height: 1.5vh;
+    }
+
+    textarea {
+        height: 8vh;
+    }
+
+    .send {
+        font-weight: 400;
+    }
+
+    .send img {
+        width: 2vw;
+    }
+
     /*    PROJEKTER */
 
-    h2 {
-        padding: 0.4vw;
-        font-size: 1.1em;
-    }
-
-    h3 {
-        text-align: left;
-        padding-left: 0;
-    }
 
     section {
         margin-top: 3vw;
