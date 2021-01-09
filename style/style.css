@@ -190,19 +190,25 @@ main {
     display: grid;
     align-items: center;
     text-align: center;
-    grid-template-columns: 3fr 2fr;
-    margin-right: 2vw;
+    grid-template-columns: 55% 45%;
+    column-gap: 1vw;
     margin-top: 2vh;
+    margin-left: -3vw;
 }
 
 .temaer_right {
-    grid-template-columns: 2fr 3fr;
-    margin-right: 0;
-    margin-left: 2vw;
+    grid-template-columns: 45% 55%;
+    margin-left: 0;
+    margin-right: -3vw;
 }
 
 .temaBeskrivelse h2 {
     font-size: 1.2em;
+}
+
+.temaBeskrivelse h3 {
+    font-size: 0.7em;
+    margin-top: 0;
 }
 
 /* OM MIG SIDEN */
@@ -498,7 +504,7 @@ footer .some {
         display: grid;
         justify-content: center;
         align-content: center;
-        height: 97.5%;
+        height: 96.9%;
         margin-bottom: 0.6vh;
         z-index: -1;
     }
@@ -635,7 +641,7 @@ footer .some {
     .info {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        padding-top: 0;
+        padding: 1.2vw;
     }
 
     .info h3 {
@@ -645,6 +651,7 @@ footer .some {
 
     .info ul {
         margin-left: 2vw;
+        padding-bottom: 0;
     }
 
     .process {
