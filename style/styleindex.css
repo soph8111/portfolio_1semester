@@ -106,21 +106,40 @@ footer .some {
         display: block;
         transform: rotate(-90deg);
         position: absolute;
-        right: -200px;
-        top: 125px;
+        right: -300px;
+        top: 160px;
         z-index: -99;
     }
 
     #sophie_spang p {
         color: #3F633B;
-        font-size: 10rem;
+        font-size: 16rem;
         font-family: 'Questrial', sans-serif;
         text-transform: uppercase;
         letter-spacing: 12px;
+        opacity: 75%;
     }
 
     #sophie_spang .spang {
-        letter-spacing: 22px;
+        letter-spacing: 25px;
+    }
+
+    .scale:hover {
+        animation-name: scale_kf;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+
+    @keyframes scale_kf {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.05);
+        }
     }
 
     .logo {
@@ -167,11 +186,11 @@ footer .some {
     #forside img:hover {}
 
     #portfolio p {
-        transform: rotate(-90deg) translateY(18vw) translateX(26vw);
+        transform: rotate(-90deg) translateY(21.2vw) translateX(21.5vw);
     }
 
     #om_mig p {
-        transform: rotate(-90deg) translateY(-17vw) translate(18vw);
+        transform: rotate(-90deg) translateY(-15vw) translate(15vw);
     }
 
 

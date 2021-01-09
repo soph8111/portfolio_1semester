@@ -53,6 +53,7 @@ p {
     margin-top: 3vw;
     margin-bottom: 3vw;
     line-height: 1.3em;
+    text-align: left;
 }
 
 a {
@@ -63,8 +64,7 @@ a {
 }
 
 br {
-    margin-bottom: 1vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vh;
 }
 
 /* Menu */
@@ -180,7 +180,7 @@ nav .some {
 
 main {
     padding-top: 11vh;
-    margin: 3vw;
+    margin: 5vw;
     margin-top: 0;
 }
 
@@ -333,6 +333,7 @@ h2 {
     padding-top: 5vw;
     margin-bottom: 3vw;
     margin-top: 3vw;
+    padding-right: 3vw;
 }
 
 .info h3 {
@@ -349,6 +350,11 @@ h2 {
     color: #3F633B;
     margin-left: 15%;
     padding-bottom: 5vw;
+}
+
+#video_prototype {
+    max-height: 60vh;
+    margin: auto;
 }
 
 
@@ -447,6 +453,11 @@ footer .some {
     p {
         margin-top: 0;
         margin-bottom: 1vw;
+        text-align: justify;
+    }
+
+    br {
+        margin-bottom: 2vw;
     }
 
     /*    PORTFOLIO SIDEN */
@@ -513,6 +524,7 @@ footer .some {
     .temaBeskrivelse a h3 {
         color: #F7CCDA;
         padding: 1vw;
+        letter-spacing: 0.3vw;
     }
 
     .temaBeskrivelse a h3 {
@@ -521,6 +533,7 @@ footer .some {
         font-size: 0.8em;
         margin: 0;
     }
+
 
     /*    OM MIG SIDEN */
 
@@ -642,6 +655,8 @@ footer .some {
         display: grid;
         grid-template-columns: auto auto auto auto;
         padding: 1.2vw;
+        padding-right: 3vw;
+        padding-bottom: 2vw;
     }
 
     .info h3 {
@@ -665,7 +680,6 @@ footer .some {
         padding-top: 0;
     }
 
-
     .reflektioner {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -677,6 +691,15 @@ footer .some {
         padding-top: 0;
     }
 
+    .process a:hover,
+    .reflektioner a:hover {
+        color: #F7CCDA;
+    }
+
+    .tekst {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
 
 
     /*    FOOTER */
