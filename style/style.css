@@ -222,8 +222,8 @@ main {
 #omMig #billedecollage {
     padding: 3vw;
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: repeat (3, 1fr) 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) 1fr;
     height: auto;
 }
 
@@ -714,6 +714,10 @@ footer .some {
 
     }
 
+    video {
+        width: 100%;
+    }
+
     /*
     .tema4_collage {
         display: grid;
@@ -782,3 +786,4 @@ footer .some {
     footer .some {
         display: none;
     }
+}
