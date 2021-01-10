@@ -42,7 +42,7 @@ h3 {
     text-transform: Uppercase;
     font-weight: 100;
     padding: 1vw;
-    letter-spacing: 0.4vw;
+    letter-spacing: 0.3vw;
     margin-top: 4vw;
 }
 
@@ -358,8 +358,6 @@ h2 {
 }
 
 
-
-
 /* FOOTER */
 
 footer {
@@ -442,6 +440,7 @@ footer .some {
     h2 {
         padding: 0.4vw;
         font-size: 1.4em;
+        letter-spacing: 0.1vw;
     }
 
     h3 {
@@ -651,6 +650,13 @@ footer .some {
         column-gap: 2vw;
     }
 
+    .mine_opgaver {
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2vw;
+    }
+
     .info {
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -692,13 +698,67 @@ footer .some {
     }
 
     .process a:hover,
-    .reflektioner a:hover {
+    .reflektioner a:hover,
+    .mine_opgaver a:hover {
         color: #F7CCDA;
     }
 
     .tekst {
         padding-left: 3vw;
         padding-right: 3vw;
+    }
+
+    .tema4_collage {
+        display: grid;
+        height: 40vh;
+
+    }
+
+    /*
+    .tema4_collage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: auto;
+        grid-gap: 1vw;
+    }
+
+    .tema4_collage .bagerste {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+    .tema4_collage .forreste {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-start: 3;
+        grid-row-end: span 3;
+    }
+
+    */
+
+    .tema5_collage {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: auto;
+        grid-gap: 1vw;
+    }
+
+    .tema5_collage .bagerste {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+    .tema5_collage .forreste {
+        grid-column-start: 2;
+        grid-column-end: span 3;
+        grid-row-start: 3;
+        grid-row-end: span 3;
     }
 
 
@@ -722,6 +782,3 @@ footer .some {
     footer .some {
         display: none;
     }
-
-
-}

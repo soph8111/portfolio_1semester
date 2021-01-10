@@ -96,7 +96,7 @@ footer .some {
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
 
     body {
         overflow: hidden;
