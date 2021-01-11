@@ -322,6 +322,34 @@ textarea {
 
 }
 
+#tak {
+    background-color: #FAF2F5;
+    height: 70vh;
+    position: absolute;
+    top: 350vh;
+    width: 90vw;
+}
+
+#tak h2 {
+    padding-top: 7vh;
+}
+
+#tak p {
+    padding: 5vw;
+    text-align: center;
+}
+
+#tak img {
+    width: 50vw;
+    display: block;
+    margin: auto
+}
+
+#tak .luk {
+    width: 8vw;
+    margin-right: 2vw;
+}
+
 /* PROJEKTER */
 
 h2 {
@@ -636,6 +664,43 @@ footer .some {
     .send img {
         width: 2vw;
     }
+
+    #tak {
+        position: relative;
+        width: 81vw;
+        top: -515px;
+        height: auto;
+    }
+
+    #tak h2 {
+        padding-top: 2vh;
+    }
+
+    #tak p {
+        padding: 2vw;
+        text-align: center;
+    }
+
+    #tak img {
+        width: 20vw;
+        display: block;
+        margin: auto;
+        padding: 2vw;
+    }
+
+    #tak .luk {
+        width: 3vw;
+        margin-right: 2vw;
+        padding: 1vw;
+    }
+
+    #tak a:hover,
+    #tak .luk:hover {
+        color: #F7CCDA;
+        cursor: pointer;
+    }
+
+
 
     /*    PROJEKTER */
 

@@ -5,6 +5,7 @@ function sidenVises() {
 
     // Tryk på burgermenu
     document.querySelector("#burgermenu").addEventListener("click", toggelmenu);
+
 }
 
 function toggelmenu() {
