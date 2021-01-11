@@ -3,23 +3,26 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("sidenVises");
 
-    // Om mig siden: tryk på "send" i kontaktformularen
-    document.querySelector(".send").addEventListener("click", visPopop);
-
-}
-
-function visPopop() {
-    console.log("visPopop");
-
-    // Ryd op
-    document.querySelector(".send").removeEventListener("click", visPopop);
-
-    // Vis pop op
     document.querySelector("#tak").classList.remove("hidden");
 
-    // Gør det muligt at lukke pop op
+    // Om mig siden: tryk på "send" i kontaktformularen
     document.querySelector(".luk").addEventListener("click", lukPopop);
+
+
 }
+
+//function visPopop() {
+//    console.log("visPopop");
+//
+//    // Ryd op
+//    document.querySelector(".send").removeEventListener("click", visPopop);
+//
+//    // Vis pop op
+//    document.querySelector("#tak").classList.remove("hidden");
+//
+//    // Gør det muligt at lukke pop op
+//    document.querySelector(".luk").addEventListener("click", lukPopop);
+//}
 
 function lukPopop() {
     console.log("lukPopop");

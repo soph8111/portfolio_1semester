@@ -375,7 +375,7 @@ textarea {
     background-color: #FAF2F5;
     height: 70vh;
     position: absolute;
-    top: 350vh;
+    top: 10px;
     width: 90vw;
 }
 
@@ -749,9 +749,9 @@ footer .some {
     }
 
     #tak {
-        position: relative;
+        position: absolute;
         width: 81vw;
-        top: -515px;
+        top: 200px;
         height: auto;
     }
 
