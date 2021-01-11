@@ -375,7 +375,7 @@ textarea {
     background-color: #FAF2F5;
     height: 70vh;
     position: absolute;
-    top: 10px;
+    top: 100px;
     width: 90vw;
 }
 
@@ -396,7 +396,8 @@ textarea {
 
 #tak .luk {
     width: 8vw;
-    margin-right: 2vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
 }
 
 /* PROJEKTER */
