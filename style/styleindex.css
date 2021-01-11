@@ -21,6 +21,22 @@ body {
     padding: 4vw;
 }
 
+.rotation {
+    animation-name: rotation_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotation_kf {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
 
 
 #sophie_spang {
@@ -149,6 +165,7 @@ footer .some {
         display: block;
         padding: 3vw;
         margin: 0;
+        margin-left: 0.5vw;
     }
 
     #forside {
@@ -192,21 +209,4 @@ footer .some {
 
     #om_mig p {
         transform: rotate(-90deg) translateY(-15vw) translate(15vw);
-    }
-
-    .rotation {
-        animation-name: rotation_kf;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
-    }
-
-    @keyframes rotation_kf {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-
     }

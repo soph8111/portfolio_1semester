@@ -6,7 +6,8 @@
 
 body {}
 
-img {
+img,
+video {
     width: 100%;
 }
 
@@ -77,9 +78,9 @@ nav {
 }
 
 .logo {
-    width: 15vw;
+    width: 12vw;
     height: auto;
-    margin: 3vw;
+    margin: 2vw;
     z-index: 99;
 }
 
@@ -484,7 +485,9 @@ footer .some {
     .logo {
         width: 8vw;
         height: auto;
-        margin-bottom: 1vh;
+        margin: 3vw;
+        margin-left: 3.5vw;
+        margin-bottom: 1vw;
     }
 
     #burgermenu {
@@ -866,9 +869,6 @@ footer .some {
 
     }
 
-    video {
-        width: 100%;
-    }
 
     /*
     .tema4_collage {
