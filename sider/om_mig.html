@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div id="kontaktFormular">
-                <form action="javascript:visPopop()" name="kontakt" data-netlify="true">
+                <form action="javascript:visPopop()" @submit.prevent="visPopop" name="kontakt" data-netlify="true">
                     <div class=" form_felt">
                         <input type="text" name="fulde_navn" placeholder="Navn (skal udfyldes)" required>
                     </div>
@@ -146,7 +146,7 @@
                         <textarea name="besked" placeholder="Besked"></textarea>
                     </div>
                     <div class="form_felt">
-                        <button class="send"><img src="../ikoner/send.png" alt="">Send</button>
+                        <button type="submit" class="send"><img src="../ikoner/send.png" alt="">Send</button>
                     </div>
                 </form>
             </div>
