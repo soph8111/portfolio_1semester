@@ -194,5 +194,19 @@ footer .some {
         transform: rotate(-90deg) translateY(-15vw) translate(15vw);
     }
 
+    .rotation {
+        animation-name: rotation_kf;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
 
-}
+    @keyframes rotation_kf {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
