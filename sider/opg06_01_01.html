@@ -12,6 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Raleway&display=swap" rel="stylesheet">
 
+    <!--    Favikon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -49,61 +56,87 @@
         <h2>Opgave 06_01_01 Portfolioeksamen</h2>
 
         <section class="intro">
-            <p></p>
-            <img src="../billeder/test.jpg" alt="test">
+            <p class="tekst">
+                I "Tema 6 - Portfolioeksamen" skulle jeg samle min læren og viden fra første semester på et portfolio website. Jeg skulle kunne demonstrere viden, færdigheder og kompetencer, og kunne reflekterer over hvad jeg har lært.
+            </p>
+            <img src="../billeder/tema6/06_01_01_b4.jpg" alt="wireframe mm">
         </section>
 
         <section class="info">
             <div class="info_om_opgaven">
                 <h3>Info om opgaven</h3>
                 <ul>
-                    <li>Fokus: Respnsivt design</li>
+                    <li>Fokus: Demonstrer viden, færdigheder og kompetencer</li>
                     <li>Gruppe/individuel: Individuel</li>
-                    <li>Værgtrøjer: HTML, CSS</li>
+                    <li>Værktrøjer: HTML, CSS, JavaScript, Adobe-pakken</li>
                 </ul>
             </div>
             <div class="krav_til_opgaven">
                 <h3>Krav til opgaven</h3>
                 <ul>
-                    <li></li>
+                    <li>Håndkodes i HTML, CSS (og evt. JavaScript)</li>
+                    <li>HTML og CSS skal valideres</li>
+                    <li>Websitet skal indeholde følgende sider: forside, portfolio, om mig</li>
                 </ul>
             </div>
             <div class="gruppeopgaver">
                 <h3>Gruppeopgaver</h3>
                 <ul>
-                    <li></li>
+                    <li>Pilotprojekt</li>
+                    <li>Redesign og temadokumentation</li>
                 </ul>
             </div>
             <div class="individuelle_opgaver">
                 <h3>Individuelle opgaver</h3>
                 <ul>
-                    <li></li>
+                    <li>Responsive_site_v2</li>
+                    <li>Idé</li>
+                    <li>Endelig prototype</li>
+                    <li>Pitch</li>
+                    <li>Assetliste og designdokumentation</li>
+                    <li>Individuelt spil</li>
+                    <li>Pilotprojekt</li>
                 </ul>
             </div>
         </section>
 
         <section class="process">
-            <img src="../billeder/test.jpg" alt="">
             <div>
+                <img src="../billeder/tema6/06_01_01_b1.jpg" alt="moodboard">
+                <img src="../billeder/tema6/06_01_01_b2.jpg" alt="fotostil">
+            </div>
+            <div class="tekst">
                 <h3>Process</h3>
                 <p>
+                    Da jeg ikke før har lavet et websites portfolio, startede jeg ud med at lave en masse deskresearch. Jeg søgte informationer omkring hvad der var vigtigt at have med i sit portfolio. Jeg ledte også efter inspiration på diverse hjemmesider. Ud fra det lavede jeg nogle skitser til layoutet. Det var vigtigt for mig, at siden var overskuelig og gav mening i forhold til brugerrejsen, men samtidig ville jeg også gerne have et visult flot (men minimalistisk) udtryk. Jeg fortsatte min idegenerering, og lavede moodboard til, hvordan jeg gerne ville have stemningen på sitet. Ud fra det skitserede jeg også idéer til logo, som jeg efterfølgende rentegnede i Adobe Illustator.
                     <br>
-
+                    Efter at have lavet skitser til layoutet af websitet, begyndte jeg at lave wireframe for opbygningen af sitet i Adobe XD. Jeg lavede mobile-first og efterfølgende for desktop. Da jeg var tilfreds med wireframen gik jeg i gang med at lave styletile - igen ud fra mit moodboard. Jeg valgte at arbejde med de komplimentærerfarver grøn og lyserød, både fordi det er to farver jeg elsker, men også for at skabe blikfang på siden. Dette legede jeg også med i photoshop til mine billeder på forsiden, hvor jeg blev inspireret af popart-stilen til noget af min fotostil.
                     <br>
-                    <a href="">Se det endelige resultat af præsentationsvideoen her</a>
+                    Jeg gik nu i gang med at lave et mock-up af websitet, ved at fylde mit wireframe ud. Dette blev efterfølgende til en prototype, som jeg testede med en tænke-højt-test på en testperson. Hans kommentarer til sitet var, at han godt kunne lide at menuen var i siden, han synes forsiden var inspirerende, men at stilen på portfolioet og forsiden ikke nødvenigvis hang så godt sammen. Det forsøgte jeg at lave om på ved at ændre lidt på fonten, da jeg synes det var svært at skulle ændre på billedstilen på portfolioet, da jeg gerne nemt vil præsenterer de forskellige projekter.
+                    <br>
+                    Da jeg nu havde styr på prototypen, gik jeg i gang med at lave et layoutdiagram, da jeg så havde et godt udgangspunkt i forhold til at skulle i gang med at kode. Layoutdiagrammet blev dog ændret lidt i løbene, da jeg fandt lidt fejl i det undervejs gennem kodningen.
+                    <br>
+                    Jeg oploadet mine ting til GitHub og connectede til Netlify, hvorefter jeg lavede en Lighthouse-test for at se hvad jeg kunne forbedre i forhold til kvaliteten af hjemmesiden. Jeg fandt frem til - som jeg havde bemærket, at jpg-filer fyldte alt for meget, og derfor var virkelig lang tid om at loade. Derudover var scoren på "accessibility" ikke så høj, men det fik jeg ændret i forbindelse med, at jeg validerede mine HTML og CSS filer. Jeg gik også ind og ændrede på størrelsen på mine billeder, og herefter lavede jeg en ny lighthousetest som viste næste 100 i alt, og jeg endte med at have en hjemmeside der var i rigtig høj standard.
+                    <br>
+                    Det kunne også have været interessant at lave en eksperttest, men grundet corona fandt jeg ikke det muligt. Med en eksperttest ville der blevet kigget på brugervenligheden fra en ekspertssynsvinkel.
                 </p>
             </div>
         </section>
 
         <section class="reflektioner">
-            <div>
+            <div class="tekst">
                 <h3>Reflektioner</h3>
                 <p>
+                    Det har for mig været super spændende at arbejde med denne eksamen. Jeg har fået lov til at lege, lære og bruge de værktøjer jeg har lært gennem semesteret. Jeg synes, at jeg har grebet opgaven godt an, ved først at lave en masse research, inden at jeg bare kastede mig over at kode noget. Derved har jeg hele tiden haft en plan, og nogete at gå tilbage til hvis jeg mistede fokuset. Jeg har forsøgt at udfordre mig selv, og selvom jeg mødte bump på vejen, så var jeg stædig nok til at finde en løsning. F.eks. drillede forsiden mig ret meget, men så gik jeg i gang med noget andet, og gik så tilbage til det med friske øjne dagen efter, og fik fikset problemet.
                     <br>
-                    <a href="">Se hele proces-dokumentationen her</a>
+                    En af de helt store ting jeg har lært ved denne opgave, det er at arbejde med grid. I opgave 05.03.01 - redesign, byggede vi hjemmesiden rigtig meget op efter "positions", da det var noget vi brugte rigtig meget i tema 4, og det fandt vi ret sent ud af, at det var helt forkert. Derfor har det været fedt med en ligende opgave, så jeg kunne lære af mine tidligere fejl.
+                    <br>
+                    Samlet set er jeg blevet ret tilfreds med hjemmesiden. Jeg kunne godt have tænkt mig at lave endnu en media query til en iPad-størrelse, men det fandt jeg først frem til lidt sent. Derudovere er der nogle steder hvor der er ldit megete white-space, hvor jeg evt. kunne have lavet layoutet lidt anderledes.
+                    <br>
+                    <a href="https://docs.google.com/document/d/1_glUInqZMb4kAlPITee-NzYFn3njWNBp9eC_p9uVfAs/edit?usp=sharing" target="_blank">Se hele proces-dokumentationen her</a>
                 </p>
             </div>
-            <img src="../billeder/test.jpg" alt="">
+            <img src="../billeder/tema6/06_01_01_b3.jpg" alt="skitse">
         </section>
 
     </main>

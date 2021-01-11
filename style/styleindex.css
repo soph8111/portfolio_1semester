@@ -102,6 +102,7 @@ footer .some {
         overflow: hidden;
     }
 
+
     #sophie_spang {
         display: block;
         transform: rotate(-90deg);
@@ -146,7 +147,7 @@ footer .some {
         width: 8vw;
         height: auto;
         display: block;
-        padding: 4vw;
+        padding: 3vw;
         margin: 0;
     }
 

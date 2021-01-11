@@ -213,11 +213,60 @@ main {
 
 /* OM MIG SIDEN */
 
-#intro #citat p {
-    text-align: center;
-    color: #F7CCDA;
-    padding: 7vw;
+#intro ul {
+    padding: 1vw;
 }
+
+#intro li {
+    list-style: none;
+    color: #F7CCDA;
+    font-family: 'Questrial', sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 1.2vw;
+    letter-spacing: 0.5px;
+}
+
+#hurtig_info {
+    display: block;
+    margin: 2vw;
+}
+
+#fakta {
+    background-color: #3F633B;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
+#this_or_that {
+    background-color: #3F633B;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+}
+
+#fem_hurtige {
+    background-color: #3F633B;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
 
 #omMig #billedecollage {
     padding: 3vw;
@@ -443,8 +492,9 @@ footer .some {
         letter-spacing: 0.15vw;
     }
 
-    /*    HUSK */
-    nav a:hover {}
+    nav a:hover {
+        color: #F7CCDA;
+    }
 
     nav hr {
         width: 80%;
@@ -578,11 +628,44 @@ footer .some {
     }
 
     #intro #portraet {
-        width: 25vw;
+        width: 30vw;
         margin: auto;
         grid-column-start: 2;
         grid-column-end: span 1;
         grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+    #intro li {
+        padding: 0.3vw;
+    }
+
+    #hurtig_info {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        height: 50vh;
+        margin-left: 4vw;
+    }
+
+    #fakta {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 1;
+        grid-row-end: span 4;
+    }
+
+    #this_or_that {
+        grid-column-start: 4;
+        grid-column-end: span 2;
+        grid-row-start: 2;
+        grid-row-end: span 4;
+    }
+
+    #fem_hurtige {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        grid-row-start: 5;
         grid-row-end: span 2;
     }
 
