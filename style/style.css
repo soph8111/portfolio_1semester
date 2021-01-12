@@ -222,10 +222,17 @@ main {
     list-style: none;
     color: #F7CCDA;
     font-family: 'Questrial', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.85em;
     text-align: center;
     padding: 1.2vw;
     letter-spacing: 0.5px;
+}
+
+#intro .titel {
+    font-size: 0.95em;
+    font-weight: bold;
+    padding: 0.8vw;
+    padding-top: 0vw;
 }
 
 #hurtig_info {
@@ -236,8 +243,8 @@ main {
 #fakta {
     background-color: #3F633B;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -248,8 +255,8 @@ main {
 #this_or_that {
     background-color: #3F633B;
     border-radius: 50%;
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -259,8 +266,8 @@ main {
 #fem_hurtige {
     background-color: #3F633B;
     border-radius: 50%;
-    width: 220px;
-    height: 220px;
+    width: 235px;
+    height: 235px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -651,7 +658,8 @@ footer .some {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(8, 1fr);
         height: 50vh;
-        margin-left: 4vw;
+        width: 100%;
+        margin-left: -0.5vw;
     }
 
     #fakta {
@@ -915,6 +923,12 @@ footer .some {
         grid-column-end: span 3;
         grid-row-start: 3;
         grid-row-end: span 3;
+    }
+
+
+    .procesimg {
+        width: 80%;
+        margin: auto;
     }
 
 
