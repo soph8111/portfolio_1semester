@@ -68,6 +68,13 @@ br {
     margin-bottom: 5vw;
 }
 
+.kilde {
+    font-size: 0.7em;
+    font-family: 'Raleway', sans-serif;
+    color: #6F6F6F;
+    text-align: center;
+}
+
 /* Menu */
 
 nav {
@@ -75,6 +82,7 @@ nav {
     width: 100%;
     height: auto;
     position: fixed;
+    z-index: 99;
 }
 
 .logo {
@@ -441,6 +449,32 @@ h2 {
 #video_prototype {
     max-height: 60vh;
     margin: auto;
+}
+
+.change {
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.hoverimg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28vw;
+    width: 40vw;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.change:hover .hoverimg {
+    opacity: 1;
+}
+
+.forskeldesktop {
+    display: none;
 }
 
 
@@ -875,6 +909,14 @@ footer .some {
         display: grid;
         height: 40vh;
 
+    }
+
+    .forskelmobil {
+        display: none;
+    }
+
+    .forskeldesktop {
+        display: block;
     }
 
 
